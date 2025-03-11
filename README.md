@@ -51,3 +51,25 @@ To run a Lox script:
 
 - [Crafting Interpreters](https://craftinginterpreters.com/) by Robert Nystrom
 - [Official Repository](https://github.com/munificent/craftinginterpreters)
+
+## Git Branching Strategy
+
+This repository uses the following branching strategy:
+
+- `main` - The primary implementation following the book's code
+- `chapterX` - Branches for each chapter (e.g., `chapter4`, `chapter5`)
+- `challenge-X-Y` - Branches for individual challenges (e.g., `challenge-4-1` for Chapter 4's first challenge)
+
+### How to navigate:
+
+1. For the standard implementation as presented in the book, follow the `main` branch.
+2. To see the implementation of a specific challenge, check out the corresponding challenge branch.
+
+### For contributors:
+
+When implementing a challenge:
+1. Branch off from the respective chapter branch (e.g., `git checkout -b challenge-4-1 chapter4`)
+2. Implement the challenge
+3. Commit and push to that branch
+
+This strategy allows us to maintain a clean main implementation while exploring alternative implementations through the book's challenges.
